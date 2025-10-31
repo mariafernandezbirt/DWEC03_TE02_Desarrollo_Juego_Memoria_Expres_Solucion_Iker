@@ -1,0 +1,139 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header, main {
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+
+}
+
+input {
+    background-color: rgb(54, 54, 54);
+    text-align: center;
+    border: none; 
+    border-bottom: 1px solid #969696;
+    padding: 5%;
+    margin-bottom: 10%;
+}
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.img-header {
+    max-width: 70%;
+}
+
+.bloque-form{
+    min-width: 250px;
+    background-color: rgb(33, 33, 33);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    padding: 3%;
+}
+
+.btn-acceder {
+    border-radius: 15px;
+    padding: 5% 3% 5% 3%;
+    background-color: #A71362;
+    color: #fff;
+    border: none;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.19);
+    cursor: pointer;    
+}
+
+.btn-acceder:hover {
+    background-color: #610034;
+    box-shadow: inset 10px 10px 5px rgba(0, 0, 0, 0.19);
+    font-weight: 700;        
+}
+
+#btn-comenzar, #btn-reiniciar, #btn-salir {
+    margin-top: 4%;
+    border-radius: 15px;
+    padding: 3% 2% 3% 2%;
+    background-color: #A71362;
+    color: #fff;
+    border: none;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+#btn-comenzar:hover, #btn-reiniciar:hover, #btn-salir:hover {
+    background-color: #610034;
+    box-shadow: inset 10px 10px 5px rgba(0, 0, 0, 0.19);
+    font-weight: 700;        
+}
+
+.bienvenida, .titulo-resultados{
+    color: #A71362;
+}
+
+.titulo-nivel{
+    font-weight: 800;
+}
+
+.eleccion-nivel{
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;      
+}
+
+.opcion-nivel{
+    margin-right: 5%;
+}
+
+
+input[type="radio"] {
+    accent-color: #A71362;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #A71362;
+    border-radius: 50%;
+    cursor: pointer;
+}
+input[type="radio"]:checked {
+    background-color:#A71362;
+}
+
+
+.resultados-parrafo{
+    text-align: left;    
+    padding: 0;
+    margin: 0 22% 0 22%;
+}
+
+#nombre-jugador, #nivel-jugador, #movimientos-jugador, #tiempo-jugador {
+    color: #A71362;
+    font-weight: 800;
+}
+
+.orbitron-font {
+    font-family: "Orbitron", sans-serif, monospace; 
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #A71362;
+}
