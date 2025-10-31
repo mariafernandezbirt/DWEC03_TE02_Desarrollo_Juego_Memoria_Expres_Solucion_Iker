@@ -46,7 +46,7 @@ function loginUsuarios(usuario, contra) {
     // Solo se ejecuta una vez, cuando acaba el for
     if (usuarioCorrecto) {
         //window.location.href = "../paginas/bienvenida.html";
-        window.location.href = "/paginas/bienvenida.html";
+        window.location.href = "paginas/bienvenida.html";
     } else {
         alert("Usuario o contraseña incorrectos");
     }
@@ -94,7 +94,7 @@ btncomenzar.click(function(event){
     var dificultad = $('input[name="dificultad"]:checked').val();
     localStorage.setItem("dificultadElegida", dificultad);   
     //window.location.href = "../paginas/juego.html";
-    window.location.href = "/paginas/juego.html";
+    window.location.href = "juego.html";
 
 })
 
@@ -132,7 +132,7 @@ function mostrarResultados(resultadoSpanId, nombreSpanId, nivelSpanId, movimient
 
     document.getElementById("btn-reiniciar")?.addEventListener("click", () => {
       //window.location.href = "../paginas/bienvenida.html";
-      window.location.href = "/paginas/bienvenida.html";
+      window.location.href = "bienvenida.html";
 
     });
 

@@ -150,7 +150,7 @@ export function iniciarJuego(dificultad) {
 
             // Redirigir a página de resultados
             //window.location.href = "../paginas/resultados.html";
-            window.location.href = "/paginas/resultados.html";
+            window.location.href = "resultados.html";
     }
 }
 

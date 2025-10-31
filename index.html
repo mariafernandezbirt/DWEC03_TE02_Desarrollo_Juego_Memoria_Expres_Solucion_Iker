@@ -6,8 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memoria EXPRESS</title>
 
+        <!-- Script que ajusta la ruta base automáticamente -->
+<script>
+    (function() {
+        //Detectar si estamos en GitHub Pages
+        const isGH = location.hostname.endsWith("github.io");
+
+        // Si estamos en GitHub Pages, extrae automáticamente el nombre del repositorio
+        const repo = isGH ? location.pathname.split("/")[1]: "";
+
+        // Construir la URL base según el entorno
+        const base = isGH
+            ? `${location.origin}/${repo}/`
+            : `${location.origin}/`;
+        
+        // Insertar la etiqueta <base> para los hrefs y src funcionen igual
+        //document.head.insertAdjacentHTML("afterbegin", `<base href="${base}">`);
+        document.write(`<base href="${base}">`);
+    }) ();
+</script> 
+
     <!-- Enlazar el archivo style.css para los estilos -->    
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
 
     <!-- Enlazar Google fonts -->   
@@ -34,31 +54,12 @@
         </section>
     </main>
 
-<script>
-    (function() {
-        //Detectar si estamos en GitHub Pages
-        const isGH = location.hostname.endsWith("github.io");
-
-        // Si estamos en GitHub Pages, extrae automáticamente el nombre del repositorio
-        const repo = isGH ? location.pathname.split("/")[1]: "";
-
-        // Construir la URL base según el entorno
-        const base = isGH
-            ? `${location.origin}/${repo}/`
-            : `${location.origin}/`;
-        
-        // Insertar la etiqueta <base> para los hrefs y src funcionen igual
-        document.head.insertAdjacentHTML("afterbegin", `<base href="${base}">`);
-    }) ();
-</script> 
 
 <!-- Enlazar el archivo main.js -->
-<script type="module" src="js/main.js"></script>    
+<script type="module" src="./js/main.js"></script>    
 
 <!-- Enlazar JQuery -->
-<script type="text/javascript" src="js/lib/jquery-3.7.1.min.js"></script>    
-
-
+<script type="text/javascript" src="./js/lib/jquery-3.7.1.min.js"></script>    
 
 </body>
 </html>
