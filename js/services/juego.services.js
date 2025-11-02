@@ -93,8 +93,8 @@ btncomenzar.click(function(event){
     // var dificultad = document.querySelector('input[name="dificultad"]:checked').value;
     var dificultad = $('input[name="dificultad"]:checked').val();
     localStorage.setItem("dificultadElegida", dificultad);   
-    //window.location.href = "../paginas/juego.html";
-    window.location.href = "juego.html";
+    window.location.href = "paginas/juego.html";
+    //window.location.href = "juego.html";
 
 })
 
@@ -131,15 +131,17 @@ function mostrarResultados(resultadoSpanId, nombreSpanId, nivelSpanId, movimient
   if(tiempoSpan) tiempoSpan.textContent = resultadoJuego.tiempoRestante;
 
     document.getElementById("btn-reiniciar")?.addEventListener("click", () => {
-      //window.location.href = "../paginas/bienvenida.html";
-      window.location.href = "bienvenida.html";
+      window.location.href = "paginas/bienvenida.html";
+      //window.location.href = "bienvenida.html";
 
     });
 
     document.getElementById("btn-salir")?.addEventListener("click", () => {
-      localStorage.clear();
-      //window.location.href = "../index.html";
-      window.location.href = "../index.html";
+        localStorage.clear();
+        //window.location.href = "../index.html";
+        window.location.href = "index.html";
+
+
     });
 }
 

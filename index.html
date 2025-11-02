@@ -21,10 +21,10 @@
             : `${location.origin}/`;
         
         // Insertar la etiqueta <base> para los hrefs y src funcionen igual
-        //document.head.insertAdjacentHTML("afterbegin", `<base href="${base}">`);
-        document.write(`<base href="${base}">`);
+        document.head.insertAdjacentHTML("afterbegin", `<base href="${base}">`);
     }) ();
 </script> 
+
 
     <!-- Enlazar el archivo style.css para los estilos -->    
     <link rel="stylesheet" href="./css/style.css">
