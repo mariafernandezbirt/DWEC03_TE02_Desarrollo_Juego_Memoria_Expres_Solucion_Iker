@@ -139,7 +139,7 @@ function mostrarResultados(resultadoSpanId, nombreSpanId, nivelSpanId, movimient
     document.getElementById("btn-salir")?.addEventListener("click", () => {
       localStorage.clear();
       //window.location.href = "../index.html";
-      window.location.href = "/index.html";
+      window.location.href = "../index.html";
     });
 }
 
